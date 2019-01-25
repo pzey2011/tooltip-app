@@ -1,25 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Tooltip from './Tooltip';
+import './App.scss';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className='container'>
+        <p>کالای ۱ <Tooltip text={'این کالا موجود نیست'}><i class="fa fa-comments" aria-hidden="true"></i></Tooltip></p>
+        <p>کالای ۲ <Tooltip text={'موجودی : ۱ عدد'}><i class="fa fa-comments" aria-hidden="true"></i></Tooltip></p>
+        <p>کالای ۳ <Tooltip text={'این کالا موجود نیست'}><i class="fa fa-comments" aria-hidden="true"></i></Tooltip></p>
+        <p>کالای ۴ <Tooltip text={'موجودی : ۲ عدد'}><i class="fa fa-comments" aria-hidden="true"></i></Tooltip></p>
+        <p>کالای ۵ <Tooltip text={'این کالا موجود نیست'}><i class="fa fa-comments" aria-hidden="true"></i></Tooltip></p>
+        <p>کالای ۶ <Tooltip text={'موجودی : ۳ عدد'}><i class="fa fa-comments" aria-hidden="true"></i></Tooltip></p>
+        <p>کالای ۷ <Tooltip text={'این کالا موجود نیست'}><i class="fa fa-comments" aria-hidden="true"></i></Tooltip></p>
       </div>
     );
   }
